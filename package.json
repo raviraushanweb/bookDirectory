@@ -1,0 +1,24 @@
+{
+  "name": "bookdirectory",
+  "version": "1.0.0",
+  "description": "simple book directory",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm index.js",
+    "dev": "nodemon -r esm index.js"
+  },
+  "keywords": [
+    "book",
+    "directory",
+    "nodejs"
+  ],
+  "author": "Ravi Raushan",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "mongoose": "^6.0.12"
+  }
+}
