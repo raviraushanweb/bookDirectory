@@ -1,0 +1,22 @@
+body {
+  background-color: aqua;
+  font-size: large;
+}
+
+form {
+  flex: auto;
+  align-items: center;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  padding: 15px;
+  margin-top: 10%;
+}
+
+option {
+  font-size: large;
+}
+
+div {
+  padding-top: 10px;
+}

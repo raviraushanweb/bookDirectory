@@ -1,4 +1,5 @@
 import { Book } from "../models";
+import { DOMAIN } from "../config";
 import Joi from "joi";
 const addBook = async (req, res) => {
   const { title, author, publishedDate, category, pages, price, publication } =
@@ -42,8 +43,8 @@ const addBook = async (req, res) => {
   } catch (err) {
     return res.json(`errors are: ${err}`);
   }
-
-  res.json(result);
+  res.status(200).send("Book added successfully!");
+  //res.redirect(`${DOMAIN}/addbook.html`);
 };
 
 export default addBook;

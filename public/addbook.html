@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Link</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <form action="api/addBook" method="POST">
+      <div>
+        <label>Select a category:</label>
+        <select class="type" name="category">
+          <option value="selfhelp">Self Help</option>
+          <option value="fiction">Fiction</option>
+          <option value="sport">Sport</option>
+        </select>
+      </div>
+      <div>
+        <label>Select the book published date:</label>
+        <input type="date" class="category" name="publishedDate" />
+      </div>
+      <div>
+        <input type="text" class="name" placeholder="Book title" name="title" />
+      </div>
+      <div>
+        <input
+          type="text"
+          class="name"
+          placeholder="Author Name"
+          name="author"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          class="subs"
+          placeholder="Number of pages: "
+          name="pages"
+        />
+      </div>
+      <div>
+        <input type="text" class="link" placeholder="book price" name="price" />
+      </div>
+      <div>
+        <input
+          type="text"
+          class="link"
+          placeholder="book publication"
+          name="publication"
+        />
+      </div>
+      <div class="input-container">
+        <input type="submit" value="SUBMIT" class="btn" />
+      </div>
+    </form>
+  </body>
+</html>
