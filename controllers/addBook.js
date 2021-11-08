@@ -36,12 +36,12 @@ const addBook = async (req, res) => {
   try {
     const bookExist = await Book.findOne({ title: req.body.title });
     if (bookExist) {
-      return res.json("Book already exist!");
+      return res.status(400).json("Book already exist!");
     }
 
     result = await book.save();
   } catch (err) {
-    return res.json(`errors are: ${err}`);
+    return res.status(500).json(`errors are: ${err}`);
   }
   res.status(200).send("Book added successfully!");
   //res.redirect(`${DOMAIN}/addbook.html`);
